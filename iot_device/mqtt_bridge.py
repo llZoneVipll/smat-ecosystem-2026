@@ -3,7 +3,6 @@ import requests
 import json
 import sys
 import time
-import os
 
 # =============================================
 # CONFIGURACIÓN
@@ -11,7 +10,7 @@ import os
 MQTT_BROKER = "broker.hivemq.com"
 MQTT_PORT   = 1883
 MQTT_TOPIC  = "fisi/smat/estaciones/+/lecturas"  # '+' wildcard para cualquier estación
-API_URL = os.environ.get("API_URL", "http://localhost:8000/lecturas/")
+API_URL     = "http://localhost:8000/lecturas/"
 JWT_TOKEN   = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbl9zbWF0IiwiZXhwIjoxNzgxMTA2NjAzfQ.CGgl0ASB7cyza5MNZ2ezp9vWWK0Cg0we7htDzNJ6SrA"  # Reemplaza con tu token
 
 # =============================================
